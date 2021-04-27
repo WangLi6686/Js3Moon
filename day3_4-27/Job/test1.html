@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>引用类型</title>
+</head>
+<body>
+    <script>
+        // var str = 'Hello, bald boy';
+        // function aa(str){
+        //     str = '...' + str +'...'
+        // }
+        // console.log(str);
+        // aa(str);
+        // console.log(str);
+        // var obj = {
+        //     name:'隔壁老王'
+        // }
+        // function aa(obj){
+        //     obj.hint = 'Hello, bald boy'
+        // }
+        // console.log(obj);
+        // aa(obj);
+        // console.log(obj);
+        // var arr = ['ss','xxc','sfd','rsdgr','zdfg'];
+        // function aa(arr){
+        //     arr.pop()
+        // }
+        // console.log(arr);
+        // aa(arr);
+        // console.log(arr);
+        // var a = 100;
+        // var b = a;
+        // b++
+        // console.log('a=',a);
+        // console.log('b=',b);
+        var obj1 = {
+            name:'zhangsan'
+        }
+        var obj2 = obj1
+        var obj3 = obj1
+        obj2.age = 22;
+        obj3.sex = 'man'
+        console.log('obj1',obj1);
+        console.log('obj2',obj2);
+        console.log('obj3',obj3);
+    </script>
+</body>
+</html>
