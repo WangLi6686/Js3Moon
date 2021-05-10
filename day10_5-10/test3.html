@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <script>
+        var res = " ";
+        new Promise(function (resolve, reject) {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.status == 200 && xhr.readyState == 4) {
+                    var data_str = xhr.responseText
+                    resolve(data_str)
+                    res += data_str
+                }
+            }
+            xhr.open('get', 'http://vue.api.comcto.com/api/password1.php');
+            xhr.send()
+        }).then(function (data) {
+            console.log('获取的值1是:' + data);
+            new Promise(function (resolve, reject) {
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function () {
+                    if (xhr.status == 200 && xhr.readyState == 4) {
+                        var data_str = xhr.responseText
+                        resolve(data_str)
+                        res += data_str
+                    }
+                }
+                xhr.open('get', 'http://vue.api.comcto.com/api/password2.php');
+                xhr.send()
+            }).then(function (data) {
+                console.log('获取的值2是:' + data);
+                new Promise(function (resolve, reject) {
+                    var xhr = new XMLHttpRequest();
+                    xhr.onreadystatechange = function () {
+                        if (xhr.status == 200 && xhr.readyState == 4) {
+                            var data_str = xhr.responseText
+                            resolve(data_str)
+                            res += data_str
+                        }
+                    }
+                    xhr.open('get', 'http://vue.api.comcto.com/api/password3.php');
+                    xhr.send()
+                }).then(function (data) {
+                    console.log('获取的值3是:' + data);
+                    new Promise(function (resolve, reject) {
+                        var xhr = new XMLHttpRequest();
+                        xhr.onreadystatechange = function () {
+                            if (xhr.status == 200 && xhr.readyState == 4) {
+                                var data_str = xhr.responseText
+                                resolve(data_str)
+                                res += data_str
+                            }
+                        }
+                        xhr.open('get', 'http://vue.api.comcto.com/api/password4.php');
+                        xhr.send()
+                    }).then(function (data) {
+                        console.log('获取的值4是:' + data);
+                        console.log(res);
+                    })
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>
