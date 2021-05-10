@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <script>
+        var pass = " "
+        $.ajax({
+            url: 'http://vue.api.comcto.com/api/password1.php',
+            method: 'get',
+            cache: false,
+            async: false,
+            success: function (msg) {
+                pass += msg;
+            }
+        })
+        $.ajax({
+            url: 'http://vue.api.comcto.com/api/password2.php',
+            method: 'get',
+            cache: false,
+            async: false,
+            success: function (msg) {
+                pass += msg;
+            }
+        })
+        $.ajax({
+            url: 'http://vue.api.comcto.com/api/password3.php',
+            method: 'get',
+            cache: false,
+            async: false,
+            success: function (msg) {
+                pass += msg;
+            }
+        })
+        $.ajax({
+            url: 'http://vue.api.comcto.com/api/password4.php',
+            method: 'get',
+            cache: false,
+            async: false,
+            success: function (msg) {
+                pass += msg;
+            }
+        })
+        // var val = v1 + v2 + v3 + v4
+        console.log(pass);
+    </script>
+</body>
+
+</html>

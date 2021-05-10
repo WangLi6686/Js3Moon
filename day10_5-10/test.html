@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 创建xml对象
+        var xhr1 = new XMLHttpRequest();
+        xhr1.onreadystatechange = function () {
+            if (xhr1.status == 200 && xhr1.readyState == 4) {
+                // 获取值
+                v1 = xhr1.responseText
+            }
+        }
+        // 设置同步
+        xhr1.open('get', 'http://vue.api.comcto.com/api/password1.php', false);
+        xhr1.send()
+
+
+
+        var xhr2 = new XMLHttpRequest();
+        xhr2.onreadystatechange = function () {
+            if (xhr2.status == 200 && xhr2.readyState == 4) {
+                v2 = xhr2.responseText
+            }
+        }
+
+        xhr2.open('get', 'http://vue.api.comcto.com/api/password2.php', false);
+        xhr2.send()
+
+
+
+        var xhr3 = new XMLHttpRequest();
+        xhr3.onreadystatechange = function () {
+            if (xhr3.status == 200 && xhr3.readyState == 4) {
+                v3 = xhr3.responseText
+            }
+        }
+        xhr3.open('get', 'http://vue.api.comcto.com/api/password3.php', false);
+        xhr3.send()
+
+
+
+        var xhr4 = new XMLHttpRequest();
+        xhr4.onreadystatechange = function () {
+            if (xhr4.status == 200 && xhr4.readyState == 4) {
+                v4 = xhr4.responseText
+            }
+        }
+        xhr4.open('get', 'http://vue.api.comcto.com/api/password4.php', false);
+        xhr4.send()
+
+
+
+        var val = v1 + v2 + v3 + v4
+        console.log(val);
+    </script>
+</body>
+
+</html>
