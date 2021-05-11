@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <script>
+        function* aa() {
+            let a = '11'
+            let b = '22'
+            yield a+b;
+            yield '啊啊啊'
+            yield '哈哈哈'
+            return 'Hello World'
+        }
+
+        console.log(aa().next())
+    </script>
+</body>
+
+</html>
