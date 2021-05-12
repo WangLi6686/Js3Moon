@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 周考二 题1
+        // const promise = new Promise((resolve,reject)=>{
+        //     console.log(1);
+        //     resolve();
+        //     console.log(2);
+        // })
+        // promise.then(()=>{
+        //     console.log(3);
+        // })
+        // console.log(4);
+        // 输出结果为 1 2 4 3
+        // 周考二 题4
+        // const promise = new Promise((resolve,reject)=>{
+        //     resolve('success1');
+        //     reject('error');
+        //     resolve('success2')
+        // });
+        // promise.then((res)=>{
+        //     console.log(res);
+        // }).catch((err)=>{
+        //     console.log(err);
+        // })
+        // 输出结果为 success1
+        // 周考二 题5
+        // let sy = Symbol('hello');
+        // let syObject = {}
+        // syObject[sy] = 'hello, world';
+        // console.log(syObject[sy]);
+        // console.log(syObject.sy);
+        // 输出结果 hello,world undefined 
+        // 周考二 题8
+        // const PI = '3.1415926'
+        // PI = '3.1315927';
+        // console.log(PI);
+        // 输出结果 报错 常量不可以重复赋值和声明
+        // 周考二 题10
+        //  for(var i=0;i<10;i++){
+        //      setTimeout(function(){
+        //          console.log(i);
+        //      })
+        //  }
+        //  输出结果 10次 10
+        // 周考二 题11
+        //  {
+        //      console.log(a);
+        //      let a = 0;
+        //  }
+        //  输出结果 报错 let变量声明必须在前
+        // 周考二 题19
+        // class person {
+        //     constructor(name = '未知', age) {
+        //         this.name = name;
+        //         this.age = age;
+        //     }
+        //     show() {
+        //         console.log(this.name);
+        //     }
+        // }
+        // let p = new person('张三', 20);
+        // p.show()
+        //  输出结果 张三
+        // 周考二 题21
+        //  url=./test.js;
+        //  模块导入正确写法 import{myName}form "./test.js";
+        // 周考二 题24
+        // class person {
+        //     constructor(name = '未知', age) {
+        //         this.name = name;
+        //     }
+        //     say() {
+        //         console.log("my name is" + this.name);
+        //     }
+        // }
+        // class student extends person {
+        //     say() {
+        //         console.log('我的名字叫' + this.name);
+        //     }
+        // }
+        // let s = new student()
+        // s.say();
+        //  输出结果 我的名字叫 未知
+         // 周考二 题25
+        //  let name = 'guys'
+        //  let string = 'Hello,${name}';
+        //  console.log(string);
+        //  输出结果 Hello,guys
+        // 周考二 题28
+        // class person{
+        //     constructor(name='未知',age){
+        //         this.name = name;
+        //         this.age = age;
+        //     }
+        // }
+        // class student extends person{
+        //     constructor(name,age,sex){}
+        // }
+        // let s = new student('李四',18,'man');
+        // console.log(s.name);
+        // 输出结果 报错
+         // 周考二 题30
+        //  let pro = new Promise(function(resolve,reject){
+        //      reject()
+        //  })
+        //  pro.then(function(value){
+        //      console.log('success');
+        //  },function(){
+        //      console.log('error');
+        //  })
+        //  输出结果 error
+    </script>
+</body>
+
+</html>

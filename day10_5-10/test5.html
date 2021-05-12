@@ -16,7 +16,7 @@
         function * it(){
             for(k in this){
                 yield this[k]
-            }
+                }
         }
         Object.prototype[Symbol.iterator] = it
         for(v of obj){
